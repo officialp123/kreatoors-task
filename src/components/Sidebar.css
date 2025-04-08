@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background-color: white;
+    border-right: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0;
+
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 1.5rem;
+  }
+  
+  .logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+  
+  .create-post-btn {
+    width: 100%;
+    background: linear-gradient(90deg, #6C68C0 0%, #8581E7 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+  }
+
+  .create-post-btn:hover {
+    filter: brightness(1.08);
+  box-shadow: 0 4px 12px rgba(123, 97, 255, 0.3);
+  }
+  
+  .btn-icon {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4A4A68;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-item:hover {
+    color: #7B61FF;
+  }
+  
+  .nav-icon-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .nav-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .dropdown-icon {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+  }
+  
+  
+  .token-widget {
+    position: relative;
+    background: linear-gradient(135deg, #6C68C0 0%, #8581E7 100%);
+    color: white;
+    padding: 1rem;
+    border-radius: 16px;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    margin-top: 220px;
+  }
+  
+  /* Overlay images */
+  .token-widget .curve-top {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 80px;
+    height: auto;
+    z-index: 0;
+  }
+  
+  .token-widget .curve-side {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 30px;
+    height: auto;
+    z-index: 0;
+  }
+  
+  /* Make sure all content appears above the curve images */
+  .token-widget * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  
+  .token-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .token-progress-bar {
+    height: 6px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 9999px;
+    overflow: hidden;
+    margin-bottom: 6px;
+  }
+  
+  .token-progress-fill {
+    height: 100%;
+    width: 40%;
+    background-color: white;
+    border-radius: 9999px;
+  }
+  
+  .token-count {
+    text-align: right;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .upgrade-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  .upgrade-link:hover {
+    text-decoration: underline;
+  }
+  
+  .arrow {
+    font-size: 14px;
+  }
+  

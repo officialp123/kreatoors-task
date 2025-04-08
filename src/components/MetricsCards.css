@@ -1,0 +1,100 @@
+.metrics-container {
+  display: flex;
+  gap: 20px;
+  padding: 0 24px 24px;
+  background-color: #F7F7F7;
+  flex-wrap: wrap;
+}
+
+.metric-card {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header row: icon + title on the left, badge on right */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-box {
+  width: 32px;
+  height: 32px;
+  background-color: #EDEBFE;
+  display: flex;
+  margin-right: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+
+.card-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4A4A68;
+}
+
+/* Badge for +12% / -2.1% */
+.badge {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.badge.green {
+  background-color: #E6FAF0;
+  color: #2BA97B;
+}
+
+.badge.red {
+  background-color: #FEEEEE;
+  color: #E55858;
+}
+
+/* Metric value (big number + label) */
+.card-metric {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  
+  font-size: 24px;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin-top: 4px;
+}
+
+.card-metric .unit {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4A4A68;
+}
+
+/* Footer row with Daily Average */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #8A8FA9;
+  border-top: 1px solid #F0F0F5;
+  margin-top: 16px;
+  padding-top: 8px;
+}
